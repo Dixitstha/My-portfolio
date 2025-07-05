@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", "Times New Roman", Times;
+}
+
+/* starting of 1st Home page */
+.container {
+  width: 100%;
+  height: 90vh;
+  background-image: url(Images/bg.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  align-items: center;
+}
+
+.Logo {
+  width: 220px;
+  margin-left: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px;
+}
+
+span {
+  color: #6c8a61;
+}
+
+nav ul {
+  list-style: none;
+  width: 30;
+  margin-right: 50px;
+  padding: 4px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 38px;
+  font-size: 14px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(7, 6, 6);
+  letter-spacing: 0.4px;
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #6c8a61;
+  transition: all 0.4s;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.nav-toggle{
+  display: none;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.text {
+  text-align: left;
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px 1px #0b2c02c4;
+  cursor: pointer;
+}
+
+.text h6 {
+  font-weight: 500;
+  padding-left: 7px;
+}
+.text h4 {
+  padding-left: 7px;
+}
+
+.line {
+  width: 2px;
+  height: 57px;
+  background-color: rgba(10, 10, 10, 0.712);
+  position: absolute;
+  margin: 0px 20px 0px 0px;
+}
+
+/* starting of 2nd about page */
+.about {
+  margin: 0px 40px;
+}
+
+.about h3 {
+  text-align: center;
+  font-family: "Times";
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.description1 {
+  text-align: center;
+}
+
+.description2 {
+  text-align: center;
+}
+
+.description3 {
+  text-align: center;
+}
+
+.des-content {
+  font-weight: 400;
+  padding: 0px 20px 20px 20px;
+}
+
+/* starting of 3rd Portfolio page */
+.portfolio {
+  background-color: #dce9cb;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.portfolio h3 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Times";
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  margin: 0px 40px;
+}
+
+/* starting of portfolio details and image sections */
+.head01 {
+  margin: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  width: 50%;
+  align-self: center;
+  text-align: left;
+}
+
+.d-text {
+  padding: 10px;
+  text-align: left;
+}
+
+.details h4 {
+  margin-bottom: 3px;
+}
+
+.image2 img {
+  height: 500px;
+  width: 500px;
+  margin: 0px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 14px 4px rgba(15, 15, 15, 0.781);
+}
+/* Ending of portfolio details and image sections */
+
+/*Starting of 'Viewas' button */
+.button1 {
+  margin: 10px 0px;
+  padding: 3px;
+  width: 90px;
+  border-radius: 7px;
+  border: 1px solid rgba(17, 17, 17, 0.623);
+  font-weight: 500;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+.fa-arrow-right {
+  margin-left: 5px;
+  font-size: 12px;
+  transform: rotate(-40deg);
+}
+/*Ending of 'Viewas' button */
+
+/* starting of 'Explore' button  */
+.button2 {
+  width: 120px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid rgba(17, 17, 17, 0.678);
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 10px;
+  background-color: rgb(248, 248, 248);
+}
+/* ending of 'Explore' button  */
+/* ending of portfolio page   */
+
+/* starting of Contact page  */
+.Contact {
+  margin: 0px 40px;
+}
+
+.Contact h3 {
+  text-align: center;
+  font-family: "Times";
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.head2 {
+  display: flex;
+}
+
+.head2 p {
+  display: inline-block;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+}
+
+.email {
+  margin-bottom: 10px;
+}
+
+.phone {
+  margin-bottom: 20px;
+}
+
+.fa-phone {
+  margin-left: 0px;
+}
+
+.fa-envelope {
+  margin-left: 0px;
+}
+
+.e-t {
+  display: inline;
+  margin-left: 10px;
+}
+
+.p-t {
+  display: inline;
+  margin-left: 10px;
+}
+
+.social .fa-square-instagram {
+  margin-left: 0px;
+}
+
+.social i {
+  margin-left: 40px;
+  font-size: 22px;
+}
+/* ending of social section  */
+
+/* starting of left side  */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  width: 50%;
+  align-self: center;
+}
+/* ending of left side  */
+
+/* starting of right side  */
+.right-side {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 30px;
+  width: 60%;
+  margin: 0px 110px;
+}
+
+/* input of form */
+input {
+  border-radius: 4px;
+  width: 300px;
+  height: 30px;
+  border: 3px;
+  outline: 1.2px solid black;
+  padding-left: 20px;
+  font-weight: 300;
+}
+
+/* starting of message box  */
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+textarea.form-input {
+  padding-left: 10px;
+}
+/* ending of it */
+
+.right-side-title {
+  margin: 10px 0px;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+/* send button */
+.button3 {
+  margin-top: -2px;
+  background-color: white;
+  width: 70px;
+  height: 25px;
+  margin-left: 230px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  border: 1px solid rgba(3, 3, 3, 0.692);
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px;
+}
+/* ending of contact page    */
+
+/* html scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+/* Utility Classes */
+.border-red {
+  border: 1px solid red;
+}
+.border-green {
+  border: 1px solid green;
+}
+.border-blue {
+  border: 1px solid blue;
+}
+.border-black {
+  border: 1px solid black;
+}
+.border-purple {
+  border: 1px solid purple;
+}

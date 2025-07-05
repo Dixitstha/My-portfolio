@@ -1,0 +1,6 @@
+/* Responsive */
+@media screen and (max-width: 390px){
+    .Logo{
+        font-size: 10px;
+    }
+}
